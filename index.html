@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Assignment Page</title>
+    <link rel="icon" href="/images/luffy.png" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        p {
+            color: #555;
+        }
+        img {
+            border: 2px solid #ccc;
+            max-width: 100%;
+            height: auto;
+        }
+        button {
+            padding: 10px 20px;
+            margin-top: 20px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>My First Website</h1>
+    <p>This is a simple website created for my assignment. It includes a heading, a paragraph, an image, and a button that changes the paragraph text when clicked.
+    </p>
+    <p></p>
+    <img src="/images/564931.jpg" alt="Sample Image" auto width="500" height="300">
+    <br>
+    <button id="changeTextBtn">Change Paragraph</button>
+
+    <script>
+        document.getElementById('changeTextBtn').addEventListener('click', function() {
+            var p = document.querySelector('p');
+            p.textContent = 'The paragraph text was changed by JavaScript!';
+        });
+    </script>
+</body>
+</html>
